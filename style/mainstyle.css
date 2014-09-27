@@ -1,0 +1,39 @@
+.hero
+{
+  width: 100%;
+  background-color: #0074D9;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutme
+{
+  width: 100%;
+  background-color: #AAAAAA;
+  margin-bottom: -25px;
+}
+.work
+{
+  width: 100%;
+  background-color: #B10DC9;
+  margin-bottom: -25px;
+}
+.projects
+{
+  width: 100%;
+  background-color: #2ECC40;
+  margin-bottom: -25px;
+}
+.getintouch
+{
+  width: 100%;
+  background-color: #AAAAAA;
+  margin-bottom: -25px;
+}
+.footer
+{
+  width: 100%;
+  background-color: #0074D9;
+  margin-bottom: -25px;
+}
