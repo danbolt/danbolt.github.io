@@ -1,17 +1,36 @@
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+.horizontalscroll
+{
+  white-space:nowrap;
+  overflow: auto;
+}
+.horizontalscrollitem
+{
+    display:inline-block;
+}
+
 .hero
 {
   width: 100%;
   background-color: #0074D9;
   margin-top: -25px;
   margin-bottom: -25px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
-.circlecrop
+.profilepicture
 {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    width: 30%;
+    min-width:200px;
+    height: auto;
 }
 
 .aboutme
@@ -19,28 +38,37 @@
   width: 100%;
   background-color: #AAAAAA;
   margin-bottom: -25px;
+  text-align: left;
 }
+
 .work
 {
   width: 100%;
   background-color: #B10DC9;
   margin-bottom: -25px;
+  text-align: left;
 }
+
 .projects
 {
   width: 100%;
   background-color: #2ECC40;
   margin-bottom: -25px;
+  text-align: left;
 }
+
 .getintouch
 {
   width: 100%;
   background-color: #AAAAAA;
   margin-bottom: -25px;
+  text-align: left;
 }
+
 .footer
 {
   width: 100%;
   background-color: #0074D9;
   margin-bottom: -25px;
+  text-align: left;
 }
