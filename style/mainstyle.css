@@ -26,6 +26,10 @@ h1
   margin-bottom: -25px;
   padding-bottom: 25px;
 }
+.block h1
+{
+  margin-bottom: 0px;
+}
 
 .horizontalscroll
 {
@@ -42,6 +46,13 @@ h1
   -ms-transform: scale(0.9, 0.9);
   -webkit-transform: scale(0.9, 0.9);
   transform: scale(0.9, 0.9);
+  border-radius: 15px;
+}
+.scrolltip
+{
+  font-size: 1em;
+  text-align: center;
+  line-height: 50%;
 }
 
 .profilepicture
@@ -133,6 +144,12 @@ h1
     -webkit-transform: scale(0.7, 0.7);
     transform: scale(0.7, 0.7);
   }
+
+  .horizontalscrollitem
+  {
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
 }
 
 /* iPad */
@@ -155,6 +172,12 @@ h1
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
+
+  .horizontalscrollitem
+  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 /* Typical Desktop Computers */
@@ -176,5 +199,11 @@ h1
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+  }
+
+  .horizontalscrollitem
+  {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
