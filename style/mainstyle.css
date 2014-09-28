@@ -1,8 +1,6 @@
-.center
+h1
 {
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
+  text-align: center;
 }
 
 .horizontalscroll
@@ -13,16 +11,11 @@
 .horizontalscrollitem
 {
     display:inline-block;
+    max-width: 500px;
+    white-space: normal;
+    vertical-align: middle;
 }
 
-.hero
-{
-  width: 100%;
-  background-color: #0074D9;
-  margin-top: -25px;
-  margin-bottom: -25px;
-  text-align: center;
-}
 .profilepicture
 {
     -moz-border-radius: 50%;
@@ -33,12 +26,29 @@
     height: auto;
 }
 
+.hero
+{
+  width: 100%;
+  background-color: #0074D9;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
 .aboutme
 {
   width: 100%;
   background-color: #AAAAAA;
   margin-bottom: -25px;
+  padding-bottom: 25px;
   text-align: left;
+}
+.aboutme img
+{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
 
 .work
@@ -46,7 +56,12 @@
   width: 100%;
   background-color: #B10DC9;
   margin-bottom: -25px;
+  padding-bottom: 25px;
   text-align: left;
+}
+.job
+{
+  background-color: pink;
 }
 
 .projects
@@ -54,7 +69,12 @@
   width: 100%;
   background-color: #2ECC40;
   margin-bottom: -25px;
+  padding-bottom: 25px;
   text-align: left;
+}
+.project
+{
+  background-color: green;
 }
 
 .getintouch
@@ -62,6 +82,7 @@
   width: 100%;
   background-color: #AAAAAA;
   margin-bottom: -25px;
+  padding-bottom: 25px;
   text-align: left;
 }
 
@@ -70,5 +91,5 @@
   width: 100%;
   background-color: #0074D9;
   margin-bottom: -25px;
-  text-align: left;
+  text-align: center;
 }
