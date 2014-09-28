@@ -21,6 +21,12 @@ h1
   color: #001F3F;
 }
 
+.block
+{
+  margin-bottom: -25px;
+  padding-bottom: 25px;
+}
+
 .horizontalscroll
 {
   white-space:nowrap;
@@ -28,14 +34,14 @@ h1
 }
 .horizontalscrollitem
 {
-    display:inline-block;
-    max-width: 500px;
-    white-space: normal;
-    vertical-align: middle;
-    padding: 10px;
-    -ms-transform: scale(0.9, 0.9); /* IE 9 */
-    -webkit-transform: scale(0.9, 0.9); /* Chrome, Safari, Opera */
-    transform: scale(0.9, 0.9);
+  display:inline-block;
+  max-width: 500px;
+  white-space: normal;
+  vertical-align: middle;
+  padding: 10px;
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
 }
 
 .profilepicture
@@ -52,8 +58,6 @@ h1
 {
   width: 100%;
   margin-top: -25px;
-  margin-bottom: -25px;
-  padding-bottom: 25px;
   padding-top: 25px;
   text-align: center;
 }
@@ -65,8 +69,6 @@ h1
 .aboutme
 {
   width: 100%;
-  margin-bottom: -25px;
-  padding-bottom: 25px;
   text-align: left;
 }
 .aboutme img
@@ -79,8 +81,6 @@ h1
 .work
 {
   width: 100%;
-  margin-bottom: -25px;
-  padding-bottom: 25px;
   text-align: left;
 }
 .job
@@ -91,8 +91,6 @@ h1
 .projects
 {
   width: 100%;
-  margin-bottom: -25px;
-  padding-bottom: 25px;
   text-align: left;
 }
 .project
@@ -103,8 +101,6 @@ h1
 .getintouch
 {
   width: 100%;
-  margin-bottom: -25px;
-  padding-bottom: 25px;
   text-align: center;
 }
 .contactblock
@@ -118,4 +114,67 @@ h1
   text-align: center;
   font-size: 0.65em;
   line-height: 140%;
+}
+
+/* Media Queries */
+
+/* Early iPhone models */
+@media (min-width: 320px)
+{
+  .aboutme p
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .contactblock
+  {
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
+  }
+}
+
+/* iPad */
+@media (min-width: 768px)
+{
+  .block
+  {
+      padding-top: 5px;
+  }
+
+  .aboutme p
+  {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contactblock
+  {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+/* Typical Desktop Computers */
+@media (min-width: 1024px)
+{
+  .block
+  {
+      padding-top: 10px;
+  }
+
+  .aboutme p
+  {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .contactblock
+  {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
 }
