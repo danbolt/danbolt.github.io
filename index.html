@@ -1,116 +1,35 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Daniel Savage</title>
+<head>
+  <title>Daniel Savage</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="style/picnic.min.css">
-    <link rel="stylesheet" type="text/css" href="style/mainstyle.css">
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-    <!-- Google CDN Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Slab:700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Makes our site scale nicely on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
 
-    <!-- Makes our site scale nicely on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  </head>
-  <body>
-    <div class="hero block onblock">
+<body>
+    <div id="hero">
       <h1>DANIEL SAVAGE</h1>
-      <h2>Software Developer and Game Designer</h2>
     </div>
-    <div class="aboutme block offblock">
-      <h1>ABOUT</h1>
-      <img class="profilepicture" src="assets/daniel.jpg">
-      <p>Hello! My name's Daniel, and I'm 23 years old! I currently live in the all-too-perfect city of Victoria, British Columbia, and recently graduated from the University of Victoria with a Bachelor's in Computer Science.</p>
-      <p>My interests include video games, programming languages, hiking, and cooking. I particularily enjoy drinking coffee on Saturday afternoons with my friends. My favourite book is <i>The Brothers Karamazov</i> by Fyodor Dostoyevsky.</p>
-      <p>Someday, I hope to have developed a bunch of fun video games, become a versatile cook, and maybe even finish something published by ATLUS. The third one is a bit of a long-shot though.</p>
-    </div>
-    <div class="work block onblock">
-      <h1>WORK</h1>
-      <div class="scrolltip">(scroll horizontally to view)</div>
-      <div class="horizontalscroll">
-        <div class="job horizontalscrollitem">
-          <h2>Electronic Arts</h2>
-          <h3>Associate Software Developer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id="patternBackground">
+      <div id="wrapper">
+        <div id="navIcons">
+          <div class="navIcon"><i class="fa fa-smile-o"></i><br />ABOUT</div>
+          <div class="navIcon"><i class="fa fa-file-code-o"></i><br />WORK </div>
+          <div class="navIcon"><i class="fa fa-code-fork"></i><br />PROJECTS </div>
+          <div class="navIcon"><i class="fa fa-envelope"></i><br />CONTACT</div>
+
+          <div style="clear: both;"></div>
         </div>
-        <div class="job horizontalscrollitem">
-          <h2>FrostTree Games</h2>
-          <h3>Lead Developer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="job horizontalscrollitem">
-          <h2>Blackberry</h2>
-          <h3>Embedded Software Designer</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="content">
+          <p>Church-key kitsch iPhone try-hard, migas kale chips four dollar toast Marfa dreamcatcher banh mi PBR occupy. Skateboard single-origin coffee pour-over organic, listicle photo booth Shoreditch meh 3 wolf moon meggings. Helvetica chillwave Intelligentsia tilde, 8-bit viral fixie fashion axe asymmetrical. Biodiesel meditation blog, selvage McSweeney's tousled put a bird on it Odd Future tofu heirloom twee hoodie Austin Brooklyn. Flannel Shoreditch Godard slow-carb umami. Gluten-free twee kitsch, Etsy authentic lo-fi literally Intelligentsia Kickstarter Pitchfork asymmetrical. Dreamcatcher readymade keytar single-origin coffee, quinoa jean shorts shabby chic taxidermy butcher tofu gastropub cred chia Neutra.</p>
         </div>
       </div>
     </div>
-    <div class="projects block offblock">
-      <h1>PROJECTS</h1>
-      <div class="scrolltip">(scroll horizontally to view)</div>
-      <div class="horizontalscroll">
-        <div class="project horizontalscrollitem">
-          <h2>Contract: Void Justice</h2>
-          <p>Contract: Void Justice is a science fiction action game with procedurally-generated levels. The player steps into the shoes of a bounty hunter caught in a deep-space prison break.</p>
-          <a class="button success" href="http://marketplace.xbox.com/en-US/Product/Contract-Void-Justice/66acd000-77fe-1000-9115-d80258550d94">Xbox</a>
-        </div>
-        <div class="project horizontalscrollitem">
-          <h2>Zippy Push Kid</h2>
-          <p>Zippy Push Kid is a cartoony platform game that's full of fun. Using the right analog stick, the player can propel themselves, push objects, and interact with enemies.</p>
-          <a class="button success" href="http://marketplace.xbox.com/en-ca/Product/Zippy-Push-Kid/66acd000-77fe-1000-9115-d80258550cd6">Xbox</a> <a class="button" href="https://github.com/FrostTree-Games/ZippyPushKid"><i class="fa fa-github fa-lg"></i> GitHub</a>
-        </div>
-        <div class="project horizontalscrollitem">
-          <h2>Prince Protect</h2>
-          <p>Prince Protect is a “boyfriend-defense” arcade game. One to two players attempt to keep their princes safe from ninjas as long as they can. </p>
-          <a class="button"><i class="fa fa-windows fa-lg"></i> Download</a> <a class="button" href="https://github.com/FrostTree-Games/PrinceProtect"><i class="fa fa-github fa-lg"></i> GitHub</a>
-        </div>
-        <div class="project horizontalscrollitem">
-          <h2>Tumblr. The Game.</h2>
-          <p>Tumblr. The Game. is a trivia challenge where you play as an alien attempting to study humanity through Tumblr. This is the brainchild of my good friend <a href="http://ritacheng.com">Rita</a>, and I helped her with the design and implementation.</p>
-          <a class=button><i class="fa fa-html5 fa-lg"></i> Play Now</a> <a class="button" href="https://github.com/metermaid/tumblrthegame"><i class="fa fa-github fa-lg"></i> GitHub</a>
-        </div>
-        <div class="project horizontalscrollitem">
-          <h2>Game Jams</h2>
-          <p>Over the years, I've been blessed doing game jams with some wonderful people.</p><p> With <a href="https://github.com/toadums">Paul</a>, <a href="https://github.com/GriffinLedingham">Griffin</a> and sometimes Cory, we've done two game jams hosted by Microsoft. One involving <a href="https://github.com/toadums/gravity">Windows Phone</a>, and the other with the <a href="https://github.com/toadums/hacklandia">Kinect Sensor</a>.</p>
-        </div>
-      </div>
-    </div>
-    <div class="getintouch block onblock">
-      <h1>CONTACT</h1>
-      <div class="row">
-        <div class="sixth contactblock">
-          <i class="fa fa-envelope-square fa-2x"></i>
-          <div>E-mail</div>
-        </div>
-        <div class="sixth contactblock">
-          <i class="fa fa-linkedin-square fa-2x"></i>
-          <div>LinkedIn</div>
-        </div>
-        <div class="sixth contactblock">
-          <i class="fa fa-facebook-square fa-2x"></i>
-          <div>Facebook</div>
-        </div>
-        <div class="sixth contactblock">
-          <i class="fa fa-github-square fa-2x"></i>
-          <div>GitHub</div>
-        </div>
-        <div class="sixth contactblock">
-          <i class="fa fa-twitter-square fa-2x"></i>
-          <div>Twitter</div>
-        </div>
-        <div class="sixth contactblock">
-          <i class="fa fa-file-code-o fa-2x"></i>
-          <div>Resume</div>
-        </div>
-      </div>
-    </div>
-    <div class="footer offblock">
-      <p><i class="fa fa-copyright fa-lg"></i> Daniel Savage 2014</p>
-      <p>Thanks for taking the time to visit my site.<br />The <i class="fa fa-code fa-lg"></i> got some <i class="fa fa-heart fa-lg"></i> from <a href="http://picnicss.com/">Picnic</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
-    </div>
-  </body>
+</body>
 </html>
