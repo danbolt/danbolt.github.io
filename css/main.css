@@ -1,6 +1,9 @@
 html, body
 {
   min-height: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body
@@ -30,6 +33,11 @@ body
 #navIcons
 {
   text-align:center;
+}
+
+.navIcon
+{
+  cursor:pointer;
 }
 
 #hero

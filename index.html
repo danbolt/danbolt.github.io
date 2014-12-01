@@ -5,8 +5,12 @@
 
   <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+
+  <script src="caffeine\main.js"></script>
 
   <!-- Makes our site scale nicely on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,15 +23,15 @@
     <div id="patternBackground">
       <div id="wrapper">
         <div id="navIcons">
-          <div class="navIcon"><i class="fa fa-smile-o"></i><br />ABOUT</div>
-          <div class="navIcon"><i class="fa fa-file-code-o"></i><br />WORK </div>
-          <div class="navIcon"><i class="fa fa-code-fork"></i><br />PROJECTS </div>
-          <div class="navIcon"><i class="fa fa-envelope"></i><br />CONTACT</div>
+          <div class="navIcon" id="aboutButton" onclick="loadContent('about');"><i class="fa fa-smile-o"></i><br />ABOUT</div>
+          <div class="navIcon" id="workButton" onclick="loadContent('work');"><i class="fa fa-file-code-o"></i><br />WORK </div>
+          <div class="navIcon" id="projectsButton" onclick="loadContent('projects');"><i class="fa fa-code-fork"></i><br />PROJECTS </div>
+          <div class="navIcon" id="contactButton" onclick="loadContent('contact');"><i class="fa fa-envelope"></i><br />CONTACT</div>
 
           <div style="clear: both;"></div>
         </div>
         <div id="content">
-          <p>Church-key kitsch iPhone try-hard, migas kale chips four dollar toast Marfa dreamcatcher banh mi PBR occupy. Skateboard single-origin coffee pour-over organic, listicle photo booth Shoreditch meh 3 wolf moon meggings. Helvetica chillwave Intelligentsia tilde, 8-bit viral fixie fashion axe asymmetrical. Biodiesel meditation blog, selvage McSweeney's tousled put a bird on it Odd Future tofu heirloom twee hoodie Austin Brooklyn. Flannel Shoreditch Godard slow-carb umami. Gluten-free twee kitsch, Etsy authentic lo-fi literally Intelligentsia Kickstarter Pitchfork asymmetrical. Dreamcatcher readymade keytar single-origin coffee, quinoa jean shorts shabby chic taxidermy butcher tofu gastropub cred chia Neutra.</p>
+          <p></p>
         </div>
       </div>
     </div>
