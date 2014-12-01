@@ -12,6 +12,11 @@ body
   display:block;
 }
 
+#content
+{
+  /*font-family: Georgia, serif;*/
+}
+
 #wrapper
 {
   margin-left: auto;
@@ -60,6 +65,13 @@ body
   /*background-color: gray;*/
 }
 
+.fa-3x
+{
+  display: block;
+  text-align:center;
+  padding-bottom: 0.3em;
+}
+
 /*FOR WIDE DISPLAYS*/
 @media (min-width: 480px)
 {
@@ -96,6 +108,11 @@ body
   {
     padding: 0.5em;
   }
+
+  #content p
+  {
+    padding-bottom: 0.5em;
+  }
 }
 
 /* DESKTOP COMPUTERS */
@@ -120,6 +137,11 @@ body
   #content
   {
     padding: 2em;
+  }
+
+  #content p
+  {
+    padding-bottom: 0.6em;
   }
 
   #patternBackground

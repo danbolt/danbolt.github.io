@@ -29,6 +29,3 @@ var loadContent = function(name)
 
   getJSON(contentPrepend + name + contentPostpend);
 }
-
-
-loadContent('abou2t');
