@@ -2,6 +2,12 @@
 var contentPrepend = 'content/';
 var contentPostpend = '.json';
 
+/*
+ * setContentBorder(name)
+ *
+ * Sets the border of the element whose id is
+ *       #<<name>>Button
+ */
 var setContentBorder = function(name)
 {
   $('.navIcon').css('border', 'none');
