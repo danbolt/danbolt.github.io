@@ -2,6 +2,11 @@
 var contentPrepend = 'content/';
 var contentPostpend = '.json';
 
+window.addEventListener("popstate", function(e)
+{
+  loadContent(location.pathname.replace('/', ''));
+});
+
 /*
  * setContentBorder(name)
  *
@@ -38,6 +43,8 @@ var loadContent = function(name)
   var applyContent = function(data)
   {
     $('#content').html(data.content);
+
+    history.pushState(null, 'pageState', name);
   }
 
   var errorFindingContent = function()
