@@ -75,6 +75,14 @@ body
     display: inline-block;
     font-size: 2em;
     text-align: center;
+
+    /* Don't let some punk highlight our text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   #navIcons
@@ -91,6 +99,15 @@ body
   #hero
   {
     font-size: 2.5em;
+    cursor: default; 
+
+    /* Don't let some punk highlight our text */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   #content
