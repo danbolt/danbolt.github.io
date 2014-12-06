@@ -2,6 +2,16 @@
 var contentPrepend = 'content/';
 var contentPostpend = '.json';
 
+var setContentBorder = function(name)
+{
+  $('.navIcon').css('border', 'none');
+
+  if (name)
+  {
+    $('#' + name + 'Button').css('border', '1px solid');
+  }
+}
+
 /*
  * loadContent(name)
  *
@@ -10,6 +20,8 @@ var contentPostpend = '.json';
  */
 var loadContent = function(name)
 {
+  setContentBorder(name);
+
   var getJSON = function(url)
   {
     $.get(url)

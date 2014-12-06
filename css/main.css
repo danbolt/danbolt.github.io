@@ -39,6 +39,12 @@ body
 .navIcon
 {
   cursor:pointer;
+
+  /*border: 1px solid;*/
+
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
 }
 
 #hero
@@ -59,6 +65,17 @@ body
 .navIcon
 {
   /*background-color: gray;*/
+}
+
+s
+{
+  /* Don't let some punk highlight our condescending remarks */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*FOR WIDE DISPLAYS*/
@@ -99,7 +116,7 @@ body
   #hero
   {
     font-size: 2.5em;
-    cursor: default; 
+    cursor: default;
 
     /* Don't let some punk highlight our text */
     -webkit-touch-callout: none;
@@ -177,6 +194,11 @@ body
 /*FOR THIN DISPLAYS*/
 @media (max-width: 480px)
 {
+  #wrapper
+  {
+    padding-top: 1em;
+  }
+
   .navIcon
   {
     width: 90%;
