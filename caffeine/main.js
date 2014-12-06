@@ -1,10 +1,20 @@
 
+/*
+ * To minimize HTML traffic and make caching more efficent, the content is
+ * rendered without reloading the page. URLs are still preserved though, and
+ * pages can be served statically.
+ *
+ * That means you can share a URL to a specific bit page, without having
+ * to navigate by browser as well.
+ */
+
+
 var contentPrepend = 'content/';
 var contentPostpend = '.json';
 
 window.addEventListener("popstate", function(e)
 {
-  loadContent(location.pathname.replace('/', ''));
+  loadContent(location.pathname.replace('/', '').replace('.html', ''));
 });
 
 /*
@@ -44,7 +54,7 @@ var loadContent = function(name)
   {
     $('#content').html(data.content);
 
-    history.pushState(null, 'pageState', name);
+    history.pushState(null, 'pageState', name + '.html');
   }
 
   var errorFindingContent = function()
