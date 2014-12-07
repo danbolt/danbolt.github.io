@@ -10,11 +10,6 @@ body
   display:block;
 }
 
-#content
-{
-  /*font-family: Georgia, serif;*/
-}
-
 #wrapper
 {
   margin-left: auto;
@@ -62,6 +57,7 @@ body
   background-color: lightgray;
 
   font-family: 'Lato';
+  font-weight: 300;
 }
 
 .navIcon

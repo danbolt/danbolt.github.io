@@ -76,7 +76,9 @@
     \twocolumn[%
     \begin{center}
 	\vskip-\lastskip%
-	{\usekomafont{part} #1} 
+	\vspace{1.25cm}
+	{\fontsize{1.75cm}{1em}\selectfont{\textbf{#1}}}
+	\vspace{1.25cm}
 	\bigskip
     \end{center}]}
 
