@@ -54,6 +54,15 @@ var loadContent = function(name)
   {
     $('#content').html(data.content);
 
+    if (name == 'work')
+    {
+      $('#content').addClass('workDetails');
+    }
+    else
+    {
+      $('#content').removeClass('workDetails');
+    }
+
     history.pushState(null, 'pageState', name + '.html');
   }
 

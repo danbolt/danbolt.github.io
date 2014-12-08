@@ -60,6 +60,27 @@ body
   font-weight: 300;
 }
 
+.workDetails
+{
+}
+
+.workDetails h2
+{
+  font-style: italic;
+}
+
+.workDetails h4
+{
+  -webkit-font-variant: small-caps;
+  -moz-font-variant: small-caps;
+  font-variant: small-caps;
+  text-align: right;
+}
+
+.workDetails h3
+{
+}
+
 .navIcon
 {
   /*background-color: gray;*/
@@ -151,6 +172,21 @@ s
     display:inline;
     margin-left: 1em;
     margin-right: 1em;
+  }
+
+  .workDetails h2
+  {
+    line-height: 0.2;
+  }
+
+  .workDetails h4
+  {
+    line-height: 0.2;
+  }
+
+  .workDetails h3
+  {
+    line-height: 0.2;
   }
 }
 
