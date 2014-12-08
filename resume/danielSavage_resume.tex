@@ -1,10 +1,13 @@
 \documentclass[10pt]{tccv}
 \usepackage[english]{babel}
 
+\pdfmapfile{+lato.map}
+
 \usepackage[default]{lato}
 \usepackage[T1]{fontenc}
 
 \usepackage{graphicx}
+\usepackage{epstopdf}
 
 \usepackage{inconsolata}
 \renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
@@ -16,11 +19,11 @@
 
 \flafamily
 
-\section{ABOUT \includegraphics[scale=1]{male}}
+\section{\includegraphics[height=10pt, keepaspectratio=true]{male} ABOUT}
 
-Hello! My name's Daniel, and I'm 23 years old! 
+Software Engineer with specialization in computer graphics, game development, and user interaction.
 
-\section{WORK}
+\section{\includegraphics[height=10pt, keepaspectratio=true]{code} WORK}
 
 \begin{eventlist}
 
@@ -28,52 +31,29 @@ Hello! My name's Daniel, and I'm 23 years old!
      {Electronic Arts Canada, Burnaby, BC}
      {Associate Software Engineer}
 
-Development of automation software for the industrial sector:
-configuration front-end in C with user interfaces based on
-\href{http://www.gtk.org/}{GTK+}, web applications and sites
-on LAMP platforms built up over the
-\href{http://www.silverstripe.org/}{SilverStripe} framework,
-supervisor programs in LabVIEW and remote system in
-\href{http://www.lua.org/}{Lua} for GNU/Linux platforms.
+Developed and maintained UI frameworks under the IGNITE brand of EA Sports. Wrote technical designs and implemented layout tools for user interface designers. Updated and maintained test cases for layout algorithms within a custom runtime. Provided support for game teams integrating new releases of framework tech. \textbf{C\#, C++, WPF, ActionScript 3}
 
 \item{December 2011-- April 2014}
-     {TWINS s.r.l., Sarezzo}
+     {FrostTree Games, Victoria, BC}
      {FrostTree Games}
 
-Programming, installation and testing of transfer machines for assembly,
-adjustment and test of gas taps. Development and installation of PC
-based test stands for pneumatic and hydraulic leakage tests on valves,
-gas regulators, electrovalves, tanks and other mechanical parts.
+Designed and implemented games for Xbox 360. Wrote game engine and content loading code to a specified feature set. Implemented game logic with OO design patterns. Integrated custom sprite batching with thrid-party animation formats. Optimized loading assets from disc. Outlined and delegated work items over a four-month period in an agile process. \textbf{C\#, C}
 
 \item{May 2012 -- August 2012}
-     {Elettronica EFFE-GI s.n.c., Cazzago}
-     {Blackberry}
+     {Blackberry, Ottawa, ON}
+     {Embedded Software Designer}
 
-Development of automatic and semiautomatic machines in general, here
-included the design of electrical, pneumatic and hydraulic schematics on
-2D cad and the PLC programming. Implementation of configuration and
-logging front-ends over RS232 serial buses between PC and PLC in BASIC
-first, Pascal and C after on MS-DOS based platforms.
-
-\item{January 1994 -- June 1996}
-     {Seven Diesel s.p.a., Rovato}
-     {Engineering department director}
-
-Planning of nozzles for diesel engines and production engineering.
-Upgraded the management software by implementing
-\href{http://adg.entidi.com/home/history/}{a system} for data handling
-and automatic drawing generation in DXF by leveraging the SuperBase 95
-RAD tool.
+Assisted with implementaion and maitenance of operating system level hardware abstraction. Programmed in C and C++, using object-oriented techniques to encapsulate firmware and driver code. Implemented features, interfaced with embedded hardware, debugged real-time camera functionality, and performed black-box testing and sanity checks for features. Was assigned and completed work items in individual and group scenarios. \textbf{C++, C}
 
 \end{eventlist}
 
 \personal
-    [www.entidi.com]
-    {viale Conciliazione, 13\newline 25039 -- Travagliato (BS)}
-    {+39 (30) 6862332}
-    {ntd@entidi.it}
+    [danbolt.github.io]
+    {1723 Mamich Circle\newline Victoria, BC   V8N6M9}
+    {1 (604) 401-2242}
+    {dansvg@gmail.com}
 
-\section{EDUCATION}
+\section{\includegraphics[height=10pt, keepaspectratio=true]{file} EDUCATION}
 
 \begin{yearlist}
 
@@ -83,42 +63,34 @@ RAD tool.
 
 \end{yearlist}
 
-\section{PROJECTS}
+\section{\includegraphics[height=10pt, keepaspectratio=true]{code} PROJECTS}
 
 \begin{yearlist}
 
+\item{2014}
+     {Tumblr. The Game. (\href{http://tumblr.ceiling.cat/}{tumblr.ceiling.cat})}
+     {Assisted with designing and programming a social media trivia game.}
+
 \item{2013}
-     {silverstripe (\href{http://silverstripe.entidi.com/}{silverstripe.entidi.com})}
-     {Themes and extensions for SilverStripe}
+     {Contract: Void Justice (\href{http://marketplace.xbox.com/en-US/Product/Contract-Void-Justice/66acd000-77fe-1000-9115-d80258550d94}{Xbox Live Indie Games})}
+     {Proceduarlly-generated, science fiction, action game.}
+
+\item{2013}
+     {Zippy Push Kid (\href{http://marketplace.xbox.com/en-ca/Product/Zippy-Push-Kid/66acd000-77fe-1000-9115-d80258550cd6}{Xbox Live Indie Games})}
+     {Magnet-themed platforming game.}
 
 \item{2012}
-     {ntdisp (\href{http://ntdisp.entidi.com/}{ntdisp.entidi.com})}
-     {Embedded devices programmer}
-
-\item{2007}
-     {tip (\href{http://tip.entidi.com/}{tip.entidi.com})}
-     {PHP framework based on PEAR}
-
-\item{2006}
-     {adg (\href{http://adg.entidi.com/}{adg.entidi.com})}
-     {Automatic drawing generation}
-
-\item{2006}
-     {gtk2panel (\href{http://gtk2panel.entidi.com/}{gtk2panel.entidi.com})}
-     {Top panel menu in GTK+2}
-
-\item{2004}
-     {ntd (\href{http://ntd.entidi.com/}{ntd.entidi.com})}
-     {General purpose libraries}
+     {Prince Protect (\href{https://github.com/FrostTree-Games/PrinceProtect}{github.com/FrostTree-Games/PrinceProtect})}
+     {Arcade-style action game for Windows.}
 
 \end{yearlist}
 
-\section{PROGRAMMING AND FRAMEWORKS}
+\section{\includegraphics[height=10pt, keepaspectratio=true]{code} PROGRAMMING AND FRAMEWORKS}
 
 \begin{factlist}
 
 \item{Adept}
-     {C\#, C, JavaScript, C++}
+     {C, C\#, JavaScript, C++}
      
 \item{Intermediate}
 	 {jQuery, HTML5/CSS, TypeScript, OpenGL}
