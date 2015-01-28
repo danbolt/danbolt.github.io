@@ -71,5 +71,10 @@ var loadContent = function(name)
     $('#content').html("<h1>Problem!</h1><p>Looks like there was an issue loading the content you selected. Try refreshing the page!</p>");
   }
 
+  if (name == '')
+  {
+    name = 'index';
+  }
+
   getJSON(contentPrepend + name + contentPostpend);
 }
