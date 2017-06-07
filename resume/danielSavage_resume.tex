@@ -1,6 +1,8 @@
 \documentclass[10pt]{tccv}
 \usepackage[english]{babel}
 
+\usepackage[tracking=true]{microtype}
+
 \pdfmapfile{+lato.map}
 
 \usepackage[default]{lato}
@@ -8,6 +10,14 @@
 
 \usepackage{graphicx}
 \usepackage{epstopdf}
+
+%% Narrow letter spacing
+\newcommand\narrowstyle{\SetTracking{encoding=*}{-50}\lsstyle}
+%% Custom letter spacing
+\newcommand\spacedstyle[1]{\SetTracking{encoding=*}{#1}\lsstyle}
+%% Normal letter spacing
+\newcommand\normalstyle{\SetTracking{encoding=*}{0}\lsstyle}
+
 
 
 \usepackage[scale=0.95,ttdefault]{AnonymousPro}
@@ -21,27 +31,33 @@
 
 \section{\textcolor{black}{\includegraphics[height=10pt, keepaspectratio=true]{male}} ABOUT}
 
-Software developer currently working in Vancouver, Canada. Interested in programming languages, game development, and software engineering methodologies. Seeks value from pragmatic choices that benefit the end user.
+Software developer currently working in Vancouver, Canada. Interested in programming languages, game development, and software engineering methodologies.
 
 \section{\includegraphics[height=10pt, keepaspectratio=true]{code} WORK}
 
 \begin{eventlist}
 
+\item{April 2016 -- Present}
+     {SkyBox Labs, Burnaby BC}
+     {Juinor Software Engineer}
+
+Updated existing legacy game codebases to modern desktop computers and added new features. Debugged and updated UI code between C++ and higher-level languages. Refactored and modularized legacy C++ code. Extended custom scripting languages. Updated legacy win32 applications for Windows 10 UWP.  \textbf{C++, C, Lua}
+
 \item{February 2015 -- July 2015}
-     {Dockyard Games, Victoria, BC}
+     {DoubleJump, Victoria, BC}
      {Software Developer}
      
-Developed games for iOS and Android devices with the Unity engine. Modularized game logic code for reuse in later projects. Worked with producers, musicians, and artists to implement game features in an Agile development environment. \textbf{C\#, JavaScript, Java, Unity}
+Developed games for iOS and Android devices with the Unity engine. Modularized game logic code for reuse in later projects. Worked with producers, musicians, and artists to implement new features in an Agile development environment. \textbf{C\#, JavaScript, Java, Unity}
 
 \item{May 2014 -- December 2014}
      {Electronic Arts Canada, Burnaby, BC}
-     {Associate Software Engineer}
+     {Associate Software Engineer - Co-op}
 
-Developed and maintained UI frameworks under the IGNITE brand of EA Sports. Wrote technical designs and implemented layout tools for user interface designers. Updated and maintained test cases for layout algorithms within a custom runtime. Provided support for game teams integrating new releases of framework tech on PC, PS4, and Xbox One. \textbf{C\#, C++, WPF, ActionScript 3 (Scaleform)}
+Developed and maintained cross-platform UI framework code. Wrote technical designs and implemented layout tools for user interface designers. Updated and maintained unit tests for layout algorithms within a custom runtime. Provided support for game teams integrating new releases of framework tech on PC, PS4, and Xbox One. \textbf{C\#, C++, WPF, ActionScript 3 (Scaleform)}
 
 \item{May 2012 -- August 2012}
      {Blackberry, Ottawa, ON}
-     {Embedded Software Designer}
+     {Embedded Software Designer - Co-op}
 
 Assisted with implementation and maintenance of operating system level hardware abstraction. Programmed in C and C++, using object-oriented techniques to encapsulate firmware and driver code. Implemented features, interfaced with embedded hardware, debugged real-time camera functionality, and performed black-box testing and sanity checks for features. Was assigned and completed work items in individual and group scenarios. \textbf{C++, C}
 
@@ -49,8 +65,8 @@ Assisted with implementation and maintenance of operating system level hardware 
 
 \personal
     [danbolt.github.io]
-    {2-19-507 Hanayama Higashimachi, Kita-ku, Kobe, Hyogo, JAPAN}
-    {Skype: \texttt{daniel.savaged}}
+    {4140 Venables Street, Burnaby BC, Canada}
+    {+1 236-999-7277}
     {dansvg@gmail.com}
 
 \section{\includegraphics[height=10pt, keepaspectratio=true]{file} EDUCATION}
@@ -67,21 +83,21 @@ Assisted with implementation and maintenance of operating system level hardware 
 
 \begin{yearlist}
 
+\item{2016}
+     {Super Radish Witch (\href{http://danbolt.itch.io/superradishwitch}{danbolt.itch.io})}
+     {Cross-platform game made with web technologies. \textbf{node.js, Phaser, gulp, NW.js, Electron}, \textbf{JavaScript/ECMAScript 2015}}
+
 \item{2014}
-     {Tumblr. The Game. (\href{http://tumblr.ceiling.cat/}{tumblr.ceiling.cat})}
-     {Assisted with designing and programming a social media trivia game. \textbf{AngularJS}, \textbf{CoffeeScript}}
+     {From the Journal of Captain Mordecai (\href{http://danbolt.github.io/CaptainMordecai/}{web})}
+     {Mobile-friendly JavaScript browser game. \textbf{node.js, gulp, Phaser}, \textbf{CoffeeScript}}
 
 \item{2013}
-     {Contract: Void Justice (\href{http://marketplace.xbox.com/en-US/Product/Contract-Void-Justice/66acd000-77fe-1000-9115-d80258550d94}{Xbox Live Indie Games})}
-     {Procedurally-generated, science fiction, action game. \textbf{C\#}}
-
-\item{2013}
-     {Zippy Push Kid (\href{http://marketplace.xbox.com/en-ca/Product/Zippy-Push-Kid/66acd000-77fe-1000-9115-d80258550cd6}{Xbox Live Indie Games})}
-     {Magnet-themed platforming game. \textbf{C\#}}
+     {Contract: Void Justice (\href{http://marketplace.xbox.com/en-US/Product/Contract-Void-Justice/66acd000-77fe-1000-9115-d80258550d94}{\scalebox{.8}[1.0]{Xbox Live Indie Games}})}
+     {Procedurally-generated, action game. \textbf{C\#, XNA}}
 
 \item{2012}
      {Prince Protect (\href{https://github.com/FrostTree-Games/PrinceProtect}{github.com/FrostTree-Games/PrinceProtect})}
-     {Arcade-style action game for Windows. \textbf{C}}
+     {Freeware arcade game for Windows. \textbf{C}}
 
 \end{yearlist}
 
@@ -90,13 +106,13 @@ Assisted with implementation and maintenance of operating system level hardware 
 \begin{factlist}
 
 \item{Adept}
-     {JavaScript (ES6), Java, C, C\#, C++}
+     {C++, JavaScript, C, C\#}
      
 \item{Intermediate}
-	 {jQuery, HTML5/CSS3, OpenGL, \\.NET Framework}
+	 {Python, Lua, node.js, ECMAScript 2015}
 
 \item{Small Experience}
-     {Meteor, MongoDB, MySQL, Postgres, Angular}
+     {ARM Assembly }
 
 \end{factlist}
 
