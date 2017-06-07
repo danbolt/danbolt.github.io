@@ -45,6 +45,8 @@ body
 #hero
 {
   text-align: center;
+
+  white-space:nowrap;
 }
 
 #hero h1
@@ -54,8 +56,6 @@ body
 
 #content
 {
-  background-color: lightgray;
-
   font-family: 'Lato';
   font-weight: 300;
 
@@ -140,7 +140,7 @@ s
     font-size: 2em;
     cursor: default;
 
-    padding: 1.5em;
+    padding: 1em;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;
