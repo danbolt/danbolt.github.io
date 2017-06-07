@@ -6,7 +6,7 @@ html, body
 
 body
 {
-  font-family: Inconsolata, Consolas;
+  font-family: 'Anonymous Pro', monospace; 
   display:block;
 }
 
